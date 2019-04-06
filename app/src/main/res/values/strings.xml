@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">Tugas Study Group 1 Motion Lab</string>
+    <string name="header_text">Belajar Mobile Programming</string>
+    <string name="pada_tanggal">Pada Tanggal</string>
+    <string name="nilai_tanggal">22/03/2019 18:45</string>
+    <string name="definisi_android">Android adalah sistem operasi berbasis Linux yang dirancang untuk perangkat bergerak layar sentuh seperti telepon pintar dan komputer tablet.</string>
+    <string name="lokasi_kelas">Lokasi Kelas:</string>
+    <string name="nilai_lokasi_kelas">Kost Beverly Park</string>
+    <string name="jumlah_peserta">Jumlah Peserta:</string>
+    <string name="nilai_jumlah_peserta">3 Orang sudah terdaftar</string>
+    <string name="mentor">Mentor</string>
+    <string name="nama_mentor">Erika Sukawati</string>
+    <string name="jurusan_mentor">S1 Teknik Informatika Unpad</string>
+    <string name="quote_mentor">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="tujuan">Tujuan</string>
+    <string name="no_pertama">1</string>
+    <string name="nomor_kedua">2</string>
+    <string name="tujuan_pertama">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="tujuan_kedua">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="nomor_ketiga">3</string>
+    <string name="tujuan_ketiga">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="nomor_keempat">4</string>
+    <string name="tujuan_keempat">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="syarat_kesatu">Mahasiswa Teknik Informatika</string>
+    <string name="syarat_kedua">Niat untuk belajar android development</string>
+    <string name="syarat_ketiga">Mau mengeksplore tentang android development</string>
+    <string name="review">Review</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="nama_review">Erika Sukawati</string>
+    <string name="index_review">3.0</string>
+    <string name="quote_review">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="ikut_kelas">Ikut Kelas</string>
+    <string name="persentase_yang_diambil">Persentase yang diambil</string>
+    <string name="nilai_persentase">5% / Bulan</string>
+    <string name="slot">Slot</string>
+    <string name="nilai_slot">8 Orang</string>
 </resources>

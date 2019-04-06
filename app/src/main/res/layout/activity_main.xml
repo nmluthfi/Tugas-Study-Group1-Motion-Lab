@@ -1,248 +1,657 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
     tools:context=".MainActivity">
 
-    <!-- Header Text-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Belajar Mobile Programming"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <!-- Layout tanggal -->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:orientation="horizontal">
-
-        <!-- Pada tanggal -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pada Tanggal"
-            android:textColor="@color/body_1"
-            android:textSize="12sp" />
-
-        <!-- keterangan tanggal dan jam -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:text="22/03/2019 18:45"
-            android:textColor="@color/body_1"
-            android:textSize="12sp" />
-
-    </LinearLayout>
-
-    <!-- Definisi Android -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Android adalah sistem operasi berbasis Linux yang dirancang untuk perangkat bergerak layar sentuh seperti telepon pintar dan komputer tablet."
-        android:textColor="@color/body_1"
-        android:textSize="16sp" />
-
-    <!-- Layout lokasi-->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal">
-
-        <!-- Keterangan Lokasi -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lokasi Kelas: "
-            android:textColor="@color/body_1"
-            android:textSize="16sp" />
-
-        <!-- Nilai Lokasi -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kost Beverly Park"
-            android:textColor="@color/body_1"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <!-- Layout slot dan persentase -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
 
-        <!-- Layout persentase-->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <!-- Keterangan persentase -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Persentase yang diambil"
-                android:textColor="@color/body_2"
-                android:textSize="16sp" />
-
-            <!-- Nilai persentase-->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="25dp"
-                android:text="5% / Bulan"
-                android:textColor="@color/body_1"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <!-- Layout slot -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <!-- Keterangan slot-->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Slot"
-                android:textColor="@color/body_2"
-                android:textSize="16sp" />
-
-            <!-- Nilai slot -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="25dp"
-                android:text="8 Orang"
-                android:textColor="@color/body_1"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <!-- Layout jumlah peserta -->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:orientation="horizontal">
-
-        <!-- Keterangan jumlah peserta-->
+        <!-- Header Text-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jumlah Peserta: "
-            android:textColor="@color/body_1"
-            android:textSize="14sp" />
-
-        <!-- Nilai jumlah peserta -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3 Orang sudah terdaftar"
-            android:textColor="@color/body_1"
-            android:textSize="14sp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/header_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
-    </LinearLayout>
-
-    <!-- Text mentor -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:text="Mentor"
-        android:textColor="@color/body_1"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <!-- Layout mentor -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/shape"
-        android:orientation="horizontal">
-
-        <!-- Img mentor -->
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="16sp"
-            android:src="@drawable/avatar" />
-
-        <!-- Layout data mentor-->
+        <!-- Layout tanggal -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
-            android:orientation="vertical">
+            android:layout_marginTop="23dp"
+            android:orientation="horizontal">
 
+            <!-- Pada tanggal -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Erika Sukawati"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="S1 Teknik Informatika Unpad"
+                android:text="@string/pada_tanggal"
                 android:textColor="@color/body_1"
-                android:textSize="12sp"
-                android:textStyle="bold" />
+                android:textSize="12sp" />
 
+            <!-- keterangan tanggal dan jam -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="12dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                android:textColor="@color/body_2"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="@string/nilai_tanggal"
+                android:textColor="@color/body_1"
                 android:textSize="12sp" />
 
         </LinearLayout>
+        <!-- End of Layout tanggal -->
+
+        <!-- Definisi Android -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/definisi_android"
+            android:textColor="@color/body_1"
+            android:textSize="16sp" />
+
+        <!-- Layout lokasi-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Keterangan Lokasi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lokasi_kelas"
+                android:textColor="@color/body_1"
+                android:textSize="16sp" />
+
+            <!-- Nilai Lokasi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nilai_lokasi_kelas"
+                android:textColor="@color/body_1"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <!-- End of Layout lokasi-->
+
+        <!-- Layout parent slot dan persentase -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <!-- Layout persentase-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Keterangan persentase -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/persentase_yang_diambil"
+                    android:textColor="@color/body_2"
+                    android:textSize="16sp" />
+
+                <!-- Nilai persentase-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/nilai_persentase"
+                    android:textColor="@color/body_1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <!-- End of Layout persentase-->
+
+            <!-- Layout slot -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Keterangan slot-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/slot"
+                    android:textColor="@color/body_2"
+                    android:textSize="16sp" />
+
+                <!-- Nilai slot -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/nilai_slot"
+                    android:textColor="@color/body_1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <!-- End of Layout slot -->
+
+        </LinearLayout>
+        <!-- End of Layout parent slot dan persentase -->
+
+        <!-- Layout jumlah peserta -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <!-- Keterangan jumlah peserta-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jumlah_peserta"
+                android:textColor="@color/body_1"
+                android:textSize="14sp" />
+
+            <!-- Nilai jumlah peserta -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nilai_jumlah_peserta"
+                android:textColor="@color/body_1"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <!-- End of Layout jumlah peserta -->
+
+        <!-- Text mentor -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="@string/mentor"
+            android:textColor="@color/body_1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Layout mentor -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal">
+
+            <!-- Img mentor -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="16sp"
+                android:src="@drawable/avatar" />
+
+            <!-- Layout data mentor-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <!-- Nama mentor -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/nama_mentor"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Jurusan Mentor -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/jurusan_mentor"
+                    android:textColor="@color/body_1"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <!-- "quote" mentor -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/quote_mentor"
+                    android:textColor="@color/body_2"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <!-- End Layout data mentor-->
+
+        </LinearLayout>
+        <!-- End of Layout mentor -->
+
+        <!-- Text Tujuan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/tujuan"
+            android:textColor="@color/body_1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Layout parent isi tujuan-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="19dp"
+            android:orientation="vertical">
+
+            <!-- Layout isi tujuan -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Nomor tujuan-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/no_pertama"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- isi tujuan -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="23dp"
+                    android:text="@string/tujuan_pertama"
+                    android:textColor="@color/body_1"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <!-- End of Layout isi tujuan -->
+
+            <!-- Layout isi tujuan -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+
+                <!-- Nomor tujuan-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/nomor_kedua"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- isi tujuan -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="23dp"
+                    android:text="@string/tujuan_kedua"
+                    android:textColor="@color/body_1"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <!-- End of Layout isi tujuan -->
+
+            <!-- Layout isi tujuan -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+
+                <!-- Nomor tujuan-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/nomor_ketiga"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- isi tujuan -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="23dp"
+                    android:text="@string/tujuan_ketiga"
+                    android:textColor="@color/body_1"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <!-- End of Layout isi tujuan -->
+
+            <!-- Layout isi tujuan -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+
+                <!-- Nomor tujuan-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/nomor_keempat"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- isi tujuan -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="23dp"
+                    android:text="@string/tujuan_keempat"
+                    android:textColor="@color/body_1"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <!-- End of Layout isi tujuan -->
+
+        </LinearLayout>
+        <!-- End of Layout parent isi tujuan-->
+
+        <!-- Syarat -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Syarat"
+            android:textColor="@color/body_1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Layout isi syarat -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp">
+
+            <!-- isi syarat -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_circle"
+                android:drawableLeft="@drawable/ic_circle"
+                android:drawablePadding="22dp"
+                android:text="@string/syarat_kesatu"
+                android:textColor="@color/body_1"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <!-- End of Layout isi syarat -->
+
+        <!-- Layout isi syarat -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp">
+
+            <!-- isi syarat -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_circle"
+                android:drawableLeft="@drawable/ic_circle"
+                android:drawablePadding="22dp"
+                android:text="@string/syarat_kedua"
+                android:textColor="@color/body_1"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <!-- Layout isi syarat -->
+
+        <!-- Layout isi syarat -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp">
+
+            <!-- isi syarat -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_circle"
+                android:drawableLeft="@drawable/ic_circle"
+                android:drawablePadding="22dp"
+                android:text="@string/syarat_ketiga"
+                android:textColor="@color/body_1"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <!-- Layout isi syarat -->
+
+        <!-- layout parent text review dan lihat semua -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <!-- Review -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/review"
+                android:textColor="@color/body_1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Lihat semua -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/lihat_semua"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <!-- end of layout parent text review dan lihat semua -->
+
+        <!-- Layout review -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <!-- Layout isi review -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:orientation="horizontal">
+
+                <!-- Img revoiew -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16sp"
+                    android:layout_marginRight="16sp"
+                    android:src="@drawable/avatar" />
+
+                <!-- Layout data review-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical">
+
+                    <!-- Nama review -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/nama_review"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- index review -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableStart="@drawable/ic_star"
+                        android:drawableLeft="@drawable/ic_star"
+                        android:drawablePadding="4dp"
+                        android:text="@string/index_review"
+                        android:textColor="@color/body_1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- "quote" review -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/quote_review"
+                        android:textColor="@color/body_2"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- End of Layout data review-->
+
+            </LinearLayout>
+            <!-- End of LLayout isi review -->
+
+            <!-- Layout isi review -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape"
+                android:orientation="horizontal">
+
+                <!-- Img revoiew -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16sp"
+                    android:layout_marginRight="16sp"
+                    android:src="@drawable/avatar" />
+
+                <!-- Layout data review-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical">
+
+                    <!-- Nama review -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/nama_review"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- index review -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableStart="@drawable/ic_star"
+                        android:drawableLeft="@drawable/ic_star"
+                        android:drawablePadding="4dp"
+                        android:text="@string/index_review"
+                        android:textColor="@color/body_1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- "quote" review -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/quote_review"
+                        android:textColor="@color/body_2"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- End of Layout data review-->
+
+            </LinearLayout>
+            <!-- End of LLayout isi review -->
+
+        </LinearLayout>
+        <!-- End of Layout review -->
+
+        <!-- Ikuti Kelas-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/ikut_kelas"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
-    aaa
-    <!-- Text Tujuan -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-</LinearLayout>
+</ScrollView>
+
+
 
